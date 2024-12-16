@@ -1,0 +1,48 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px double red;
+    background-color: rgb(137, 252, 131);
+
+    animation-name: scale_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tran_animation{
+    from{
+        transform: translate(100px,100px);
+        rotate(20deg);
+    }
+    to{
+        transform: translate(500px,500px);
+        rotate(360deg);
+    }
+}
+
+@keyframes scale_animation{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(2.5);
+    }
+}
+
+@keyframes skew_animation{
+    from{
+        transform: skew(20deg);
+    }
+    to{
+        transform: skew(360deg);
+    }
+}
+
+@keyframes rotate_animation{
+    from{
+        transform: rotate(20deg);
+    }
+    to{
+        transform: scale(360deg);
+    }
+}
